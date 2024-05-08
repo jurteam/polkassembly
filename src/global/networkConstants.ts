@@ -194,7 +194,7 @@ export const chainProperties: types.ChainPropType = {
 		logo: jurLogo,
 		rpcEndpoint: 'wss://testnet.jur.io',
 		ss58Format: 0,
-		subsquidUrl: '',
+		subsquidUrl: 'https://b58390f6-2724-49a1-b3cc-f76945758c17.squids.live/jur/v/v1/graphql',
 		tokenDecimals: 18,
 		tokenSymbol: tokenSymbol.JUR,
 		treasuryProposalBondPercent: '5.00%',
