@@ -8,6 +8,7 @@ import acuityLogo from '~assets/parachain-logos/acuity-logo.jpg';
 import integriteeLogo from '~assets/parachain-logos/integritee-logo.png';
 import altairLogo from '~assets/parachain-logos/altair-logo.jpeg';
 import amplitudeLogo from '~assets/parachain-logos/amplitude-logo.png';
+import jurLogo from '~assets/parachain-logos/jur-logo.png';
 import astarLogo from '~assets/parachain-logos/astar-logo.png';
 import automataLogo from '~assets/parachain-logos/automata-logo.jpg';
 import basiliskLogo from '~assets/parachain-logos/basilisk-logo.jpg';
@@ -121,7 +122,8 @@ export const network = {
 	XX: 'xx',
 	ZEITGEIST: 'zeitgeist',
 	MANDALA: 'mandala',
-	CURIO: 'curio'
+	CURIO: 'curio',
+	JUR: 'jur'
 };
 
 export const tokenSymbol = {
@@ -179,10 +181,34 @@ export const tokenSymbol = {
 	XX: 'XX',
 	ZTG: 'ZTG',
 	KPGT: 'KPGT',
-	CGT: 'CGT'
+	CGT: 'CGT',
+	JUR: 'JUR'
 };
 
 export const chainProperties: types.ChainPropType = {
+	[network.JUR]: {
+		preImageBaseDeposit: '100000000000000',
+		blockTime: 6000,
+		category: 'solo',
+		chainId: 0,
+		logo: jurLogo,
+		rpcEndpoint: 'wss://testnet.jur.io',
+		ss58Format: 0,
+		subsquidUrl: 'https://b58390f6-2724-49a1-b3cc-f76945758c17.squids.live/jur/v/v1/graphql',
+		tokenDecimals: 18,
+		tokenSymbol: tokenSymbol.JUR,
+		treasuryProposalBondPercent: '5.00%',
+		treasuryProposalMinBond: '100',
+		treasuryProposalMaxBond: '500',
+		externalLinks: 'https://explorer.jur.io/jur',
+		gTag: null,
+		rpcEndpoints: [
+			{
+				label: 'via Jur (recommended)',
+				key: 'wss://testnet.jur.io'
+			}
+		]
+	},
 	[network.POLKADOT]: {
 		preImageBaseDeposit: '400000000000',
 		blockTime: 6000,

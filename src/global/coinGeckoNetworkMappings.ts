@@ -6,6 +6,7 @@ export const coinGeckoNetworks: any = {
 	cere: 'cere-network',
 	crust: 'crust-network',
 	crustshadow: 'crust-storage-market',
+	jur: 'jur',
 	kilt: 'kilt-protocol',
 	kylin: 'kylin-network',
 	robonomics: 'robonomics-network',
